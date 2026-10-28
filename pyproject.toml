@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eoa"
+version = "0.1.0"
+description = "Excess-coupling decorrelation (E-OA): model-independent post-processing that decorrelates over-coupled classifier outputs in rank space."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Eesh Saxena" }]
+keywords = ["weak-supervision", "label-noise", "decorrelation", "post-processing", "medical-imaging"]
+dependencies = ["numpy>=1.20"]
+
+[project.urls]
+Homepage = "https://github.com/eeshsaxena/excess-coupling-decorrelation"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["eoa*"]
